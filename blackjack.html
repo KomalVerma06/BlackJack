@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(2, 65, 2);
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            font-weight: bolder;
+        }
+        h1{
+            color: goldenrod;
+            margin: 20px;
+        }
+        p{
+            margin: 20px;
+        }
+        .message{
+            font-style: italic;
+        }
+        .startgame{
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+            color: #024e0b;
+            background-color: goldenrod;  
+            text-transform: uppercase;
+            
+        }
+        .startgame:hover, .cards:hover{
+            background-color: gold;
+            font-size: 0.9rem;
+        }
+        .cards{
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+            color:  #024e0b;
+            background-color: goldenrod;  
+            text-transform: uppercase;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blackjack</h1>
+    <p id="message">want to play a round?</p>
+    <p id="cards-el">cards:</p>
+    <p id="sum-el">sum:</p>
+    <button class="startgame" onclick="startgame()">Start Game</button>
+   <div> <button class="cards" onclick="newcard()">Cards</button></div>
+   <p id="player-el"></p>
+    <script src="blackjack.js"></script>
+</body>
+</html>
